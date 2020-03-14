@@ -19,6 +19,13 @@ function css() {
     .pipe(dest('dist'));
 }
 
+function buildCss() {
+  return src('src/*.scss')
+      .pipe(sass())
+      .pipe(autoprefixer())
+      .pipe(dest('dist'));
+}
+
 /**
  * Proxies AO3 on localhost and either replaces their stylesheets with ours
  * or appends our stylesheet after theirs.
@@ -89,5 +96,5 @@ function changes(cb) {
   cb();
 }
 
-exports.build = css;
+exports.build = buildCss;
 exports.default = series(css, changes);
