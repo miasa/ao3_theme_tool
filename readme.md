@@ -23,12 +23,12 @@ AO3 does not do mobile first, instead stylesheets are loaded from large to small
 ### Commands
 
 ```
-gulp --replace
+npm start -- --replace
 ```
 If you want to replace the existing archive styles. Corresponds to AO3 "What it does = replace archive skin entirely" setting.
 
 ```
-gulp
+npm start
 ```
 If you want to override the existing archive styles. Corresponds to AO3 "What it does = add on to archive skin" setting.
 
@@ -40,7 +40,7 @@ Then just start writing SASS and watch your browser update the view automaticall
 
 First build the final styles by running 
 ```
-gulp build
+npm run build
 ```
 
 ### The desktop skin

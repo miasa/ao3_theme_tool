@@ -1,20 +1,22 @@
 {
-  "name": "2020",
+  "name": "ao3_theme_developer",
   "version": "1.0.0",
   "description": "AO3 theme developer",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "gulp"
+    "start": "gulp",
+    "build": "gulp build"
   },
   "author": "miasa",
   "license": "ISC",
   "devDependencies": {
-    "browser-sync": "^2.26.7",
+    "browser-sync": "^2.26.14",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^7.0.1",
-    "gulp-sass": "^4.0.2",
+    "gulp-sass": "^4.1.0",
     "gulp-sourcemaps": "^2.6.5",
-    "yargs": "^15.3.0"
-  }
+    "yargs": "^17.0.1"
+  },
+  "dependencies": {}
 }
